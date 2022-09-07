@@ -1,0 +1,138 @@
+ main{
+    padding-top: 2rem;
+ }
+
+.background{
+    background: url(../images/plans-background.jpg) center/cover;
+    filter: grayscale(40%);
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+ .clearfix{
+    clear: both;
+ }
+ 
+.Package{
+    width: 80%;
+    margin: 32px 0;
+    border: 4px solid #0e4f1f;
+    border-left: none;
+    position: relative;
+
+
+} 
+.Package__badge{
+    position: absolute;
+    top: 5%;
+    right: 0;
+    margin: 20px;
+    color: white;
+    font-size: 15px;
+    background-color: #ff5454;
+    padding: 8px;
+
+}
+
+
+.Package:hover,
+.Package:active{
+    box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.7);
+    border: 2px solid #ff5454;
+    border-left: none;
+}
+.Package a{
+    text-decoration: none;
+    color: inherit ;
+    display: block;
+    padding: 2rem;
+}
+
+
+.Package__feature{
+    border: 2px solid #0e4f1f;
+    color: #0e4f1f;
+    background-color: white;
+    padding: 1rem;
+    font-size: 20px;
+}
+ 
+.Package__rating{
+    color: gray;
+}
+
+#free{
+    background: #00000080;
+    background: rgba(234, 255, 220, 0.8);
+    float: right;
+    border-right: none; 
+     border-left: 4px solid #0e4f1f; 
+
+}
+
+#free:hover,
+#free:active{
+    border-left: 2px solid #ff5454;
+    box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.7);
+    
+}
+
+#plus{
+    background-color: rgba(213, 255, 220, 0.8);
+    /* background:linear-gradient(to right, rgba(#00000080, 0.95), rgba( #eaffdccc, 0.95); */
+}
+
+
+#premium{
+    background: rgba(14, 79, 31, 0.8);
+}
+
+#premium .Package__plan{
+    color: white;
+    
+}
+
+#premium{
+
+    color: #bbb;
+}
+ 
+ 
+ 
+ 
+ 
+ @media (min-width:76rem) {
+    main{
+        margin: 0 auto;
+        max-width: 1200px;
+    }
+
+    .Package{
+        border-left: 4px solid #0e4f1f;
+
+        }
+        .Package:hover,
+        .Package:active{
+         box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.7);
+         border: 2px solid #ff5454;
+         }
+        
+
+        #free{
+         border-right: 4px solid #0e4f1f;
+        }
+
+        #free:hover,
+        #free:active{
+         border-right: 2px solid #ff5454;
+        box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.7);
+        }
+    
+        
+ }
+
+ /* @media (max-width:1450px){
+ 
+ } */
